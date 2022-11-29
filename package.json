@@ -4,21 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "dotenv -e .env mocha --",
     "dev": "nodemon dotenv -e .env index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "celebrate": "^15.0.1",
     "express": "^4.18.2",
     "http-status": "^1.5.3",
     "joi": "^17.7.0",
     "lodash": "^4.17.21",
     "boom": "^7.1.1",
-    "mocha": "^10.0.0",
-    "chai": "^4.3.4",
-    "chai-http": "^4.3.0"
+    "nodemon":"^2.0.20",
+    "dotenv": "^16.0.3"
   }
 }

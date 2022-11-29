@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const { getIntervalNumbersCount,getMinimumSteps,getStringIndex } = require('../controllers/index')
-const { intervalNumbersCountValidator, getStringIndexValidator } = require('../validators/index')
+const { intervalNumbersCountValidator, getStringIndexValidator, getMinStepsValidator } = require('../validators/index')
 router.get("/interval-count",intervalNumbersCountValidator, getIntervalNumbersCount)
 router.get("/input-string",getStringIndexValidator,getStringIndex)
-router.get("/numbers/:set",getMinimumSteps)
+router.post("/numbers",getMinStepsValidator,getMinimumSteps)
 
 module.exports= router
